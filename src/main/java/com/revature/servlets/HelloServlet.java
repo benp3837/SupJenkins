@@ -18,7 +18,7 @@ public class HelloServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException{
 		PrintWriter pw = res.getWriter(); //this is how we write to our Response object.
-		pw.print("<h1>Hello from your doGet method!<h2>");
+		pw.print("<h1>Hello from your doGet method from Jenkins! Thanks Pipeline :)<h2>");
 		res.setStatus(200); //optional but good to show it working in postman
 	}
 	
